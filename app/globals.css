@@ -2,26 +2,160 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.mainContent {
+    @apply flex flex-col items-center justify-center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.mainBar {
+    @apply items-center;
+    text-align: left;
+    margin-left: -10px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.navIcons {
+    @apply rounded-3xl bg-yellow-500;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.navigatingLinks {
+    padding-left: 15px;
+    background-color: rgb(202, 212, 209);
+    height: 100vh;
+}
+
+.hamburger_menu {
+    @apply flex flex-col items-center justify-center;
+    padding: 15px 0;
+}
+
+.NavIcons {
+    @apply flex flex-col items-center justify-center;
+    padding: 15px 10px;
+}
+
+.nav_links {
+    @apply flex flex-col items-center justify-center;
+    padding: 15px 10px;
+}
+
+.sidebarMenus {
+    margin-left: 15px;
+}
+
+.mailLinks {
+    padding: 3px auto;
+}
+
+.links {
+    @apply rounded-2xl items-center py-1;
+    padding: 3px auto;
+    display: flex;
+}
+
+.links:hover {
+    background-color: rgb(202, 212, 209);
+    color: rgb(11, 11, 11);
+}
+
+.lebels_links {
+    margin-top: 30px;
+}
+
+.compose_button {
+    background-color: rgb(204, 218, 224);
+    border-radius: 15px;
+    margin-left: -8px;
+}
+
+.inputForm {
+    @apply focus:outline-none focus:border-blue-500;
+    @apply text-gray-700;
+    @apply py-1 rounded-3xl;
+    width: 700px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: rgb(235, 240, 238);
+}
+
+.formContainer{
+    @apply border-2 border-gray-300 rounded-3xl px-2 py-2;
+    width: 800px;
+    margin-top: 35px;
+    margin-left: 15px;
+    background-color: rgb(235, 240, 238);
+}
+
+
+.top_header{
+    background-color: rgb(235, 240, 238);
+    width: 1120px;
+    margin-left: -10px;
+    margin-right: 0;
+    padding-bottom: 5px;
+}
+
+.top_bar_icons{
+    @apply items-center justify-center rounded-2xl;
+    margin: 10px 0px;
+    padding: 5px 13px;
+}
+
+.top_bar_icons:hover{
+    @apply bg-gray-300;
+}
+
+.right_flex{
+    margin-left: 700px;
+}
+
+p{
+    margin-right: 16px;
+}
+
+.main_links{
+    padding: 10px 20px;
+}
+
+.main_links:hover{
+    @apply bg-gray-300;
+}
+
+.main_container{
+    padding: 0;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.sidebar_container{
+    height: 100vh;
+    width: 230px;
+    padding: -100px 0px;
+    background-color: rgb(223, 228, 226);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.content_container{
+    margin-left: -100px;
+}
+
+.settingIcons{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.setting_icon{
+    padding-left: 20px;
+}
+
+.logo{
+    padding-top: -100px;
+}
+
+.hamburger_menu{
+    background-color: rgb(204, 218, 224);
+    padding: 10px;
+    border-radius: 15px;
 }
